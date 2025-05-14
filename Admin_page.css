@@ -5,7 +5,7 @@
 
 .navbar {
     background-color: black;
-    padding: 1.5rem 0;
+    padding: 60;
     position: fixed;
     height: 30px;
     top: 0;
@@ -13,6 +13,8 @@
     right: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul {
@@ -21,6 +23,8 @@
     padding-right: 100px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
 .navbar li {
@@ -34,6 +38,12 @@
     font-weight: 400;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 32px;
+}
 
 .navbar a:hover {
     opacity: 0.8;
@@ -81,7 +91,10 @@ h1 {
 }
 
 .icon-btn {
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-left: 20px;  
 }
 
 .nav-icon {
@@ -103,12 +116,12 @@ h1 {
     background-color: rgba(253, 253, 253);
     border-radius: 20px;
     padding: 10px;
-    width: 400px;
+    width: 450px;
     height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .container-icon {
@@ -123,5 +136,13 @@ h1 {
     font-size: 2rem;
     font-weight: 400;
     margin: 0;
+}
+
+.admin-text {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
 }
 
