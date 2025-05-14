@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Advance request</title>
+    <link rel="stylesheet" href="Advance_req.css">
+</head>
+<body>
+    <div class="hero">
+        <nav class="navbar">
+            <div class="nav-title"><u>Advance Request</u></div>
+            <ul>
+                <li>
+                    <div class="icon-container">
+                        <a class="icon-btn"><img src="Photo/profile.png" alt="User" class="nav-icon"></a>
+                        <a class="icon-btn"><img src="Photo/exit.png" alt="Exit" class="nav-icon"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="form-container">
+            <form class="request-form">
+                <div class="form-columns">
+                    <div class="left-column">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="school">School</label>
+                            <input type="text" id="school" required>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="form-group">
+                            <label for="school-id">School ID</label>
+                            <input type="text" id="school-id" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" required>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Late Entry</label>
+                    <textarea id="reason" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>*Need to upload photos or documents for verification.</label>
+                    <button type="button" class="upload-btn">Upload Files</button>
+                </div>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </div>
+    </div>
+    <script src="Advance_req.js"></script>
+</body>
+</html>
