@@ -1,0 +1,86 @@
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: black;
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar li {
+    margin-left: 75px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+.signup-btn {
+    background-color: #880b0b;
+    font-weight: 400;
+    padding: 5px 5px;
+    color: white !important;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding-left: 50px;
+}
+
+.main-title {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #D40C0C;
+    margin: 0;
+    line-height: 1;
+}
+
+.sub-title {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: #FFDE59;
+    margin-top: 0rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Photo/GOLDEN_5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    float: left;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Tilt Warp", sans-serif;
+}
