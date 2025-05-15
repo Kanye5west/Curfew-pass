@@ -1,0 +1,189 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: black;
+    padding: 1.5rem 0;
+    position: fixed;
+    height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar li {
+    margin-left: 75px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+.signup-btn {
+    background-color: #880b0b;
+    font-weight: 400;
+    padding: 5px 5px;
+    color: white !important;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+}
+
+.about-left {
+    position: absolute;
+    top: 62%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    min-width: 500px;
+    z-index: 2;
+    margin-top: 100px; /* Add spacing so content is not hidden behind label */
+}
+
+.main-title {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #D40C0C;
+    margin: 0;
+    line-height: 1;
+}
+
+.sub-title {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    color: #FFDE59;
+    margin-top: 0rem;
+}
+
+.about-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.about-label {
+    position: absolute;
+    top: 15%;
+    left: 40px;
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #FFDE59;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    z-index: 10;
+}
+
+.about-main-red {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    color: #D40C0C;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.about-main-yellow {
+    font-family: "Tilt Warp", sans-serif;
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: #FFDE59;
+    margin-top: 0.5rem;
+    line-height: 1;
+}
+
+.about-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.about-desc-box {
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 20px;
+    padding: 40px 40px 40px 40px;
+    max-width: 600px;
+    color: #fff;
+    font-family: 'Tilt Warp', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.3;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    margin-top: -200px; /* Move the box even higher */
+    margin-right: 50px;
+}
+
+.about-desc-box p {
+    margin: 0;
+    font-family: 'Tilt Warp', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+@media (max-width: 1100px) {
+    .about-layout {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    .about-left, .about-right {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        min-width: unset;
+    }
+    .about-desc-box {
+        font-size: 1.2rem;
+        padding: 20px;
+        max-width: 95vw;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Photo/GOLDEN_5.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Tilt Warp", sans-serif;
+}
