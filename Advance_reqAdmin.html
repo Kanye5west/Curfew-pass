@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Advance request - Admin</title>
+    <link rel="stylesheet" href="Advance_reqAdmin.css">
+</head>
+<body>
+    <div class="hero">
+        <nav class="navbar">
+            <div class="nav-title"><u>Advance Request - Admin</u></div>
+            <ul>
+                <li>
+                    <div class="icon-container">
+                        <a class="icon-btn"><img src="Photo/profile.png" alt="User" class="nav-icon"></a>
+                        <a class="icon-btn"><img src="Photo/exit.png" alt="Exit" class="nav-icon"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="form-container">
+            <form class="request-form">
+                <div class="form-columns">
+                    <div class="left-column">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" maxlength="30"required>
+                        </div>
+                        <div class="form-group">
+                            <label for="school">School</label>
+                            <input type="text" id="school" maxlength="50" required>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="form-group">
+                            <label for="school-id">School ID</label>
+                            <input type="text" id="school-id"maxlength="10" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact" >Contact Number</label>
+                            <input type="tel" id="contact" maxlength="11" required>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reason">Reason for Late Entry</label>
+                    <textarea id="reason" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label style="font-family: Lateef, sans-serif; font-weight: 400; font-size: 1.5rem;">*Need to upload photos or documents for verification.</label>
+                    <button type="button" class="upload-btn">Upload Files</button>
+                </div>
+                <div class="form-group" style="position:relative;">
+                    <button type="button" class="submit-btn" id="request-action-btn">Request Action</button>
+                    <div id="request-action-dropdown-overlay" class="dropdown-overlay">
+                        <select id="request-action-dropdown" size="2">
+                            <option value="Approve Request">Approve Request</option>
+                            <option value="Deny Request">Deny Request</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="successOverlay" class="overlay">
+            <div class="overlay-content">
+                <p>Your request has been submitted successfully. Please check your email for approval updates from the GCH Homeowners Association.</p>
+                <button class="close-btn">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="Advance_reqAdmin.js"></script>
+</body>
+</html>
